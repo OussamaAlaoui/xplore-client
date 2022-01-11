@@ -1,0 +1,22 @@
+<p>login works!</p>
+<div fxLayoutAlign="center center" fxFlexFill class="main-div"> 
+    <mat-card fxFlex="23">
+
+            <mat-toolbar color="primary">
+              <span >Login </span>
+            </mat-toolbar>
+
+        <form fxLayoutAlign="stretch" fxLayout="column" class ="login-form" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Username</mat-label>
+              <input matInput formControlName="username">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password">
+              </mat-form-field>
+          <button mat-raised-button type="submit" color="primary">Login</button>
+          </form>
+          
+    </mat-card>
+</div>
